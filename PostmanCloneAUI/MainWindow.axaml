@@ -1,0 +1,27 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="PostmanCloneAUI.MainWindow"
+        Title="Postman Clone by Zach Zak">
+		<StackPanel>
+
+			<TextBlock Margin="5" FontSize="30" FontWeight="Bold" Text="Postman Clone" />
+
+			<StackPanel Orientation="Horizontal"  >
+				<TextBlock Margin="5" FontSize="24" Text="API:"></TextBlock>
+				<TextBox Name="ApiText" Margin="5" FontSize="20" AcceptsReturn="true" CornerRadius="8" Watermark="Enter URL here..." />
+				<Button Margin="5" Click="ClickHandler">GO</Button>
+			</StackPanel>
+
+
+			<StackPanel>
+				<TextBlock FontSize="24" Margin="5" Text="Results"></TextBlock>
+				<TextBox Name="ResultsText" Margin="5" IsReadOnly="true" AcceptsReturn="True" CornerRadius="8" Height="250" />
+			</StackPanel>
+			<StackPanel Orientation="Horizontal">
+				<TextBlock Name="StatusText" VerticalAlignment="Bottom" HorizontalAlignment="Left" TextAlignment="Left" FontWeight="Bold" Text=""></TextBlock>
+			</StackPanel>
+		</StackPanel>
+</Window>

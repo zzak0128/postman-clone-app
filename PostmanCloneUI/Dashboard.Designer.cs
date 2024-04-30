@@ -129,6 +129,7 @@ partial class Dashboard
         Margin = new Padding(6);
         Name = "Dashboard";
         Text = "Postman Clone by Zach Zak";
+        Load += Dashboard_Load;
         statusStrip.ResumeLayout(false);
         statusStrip.PerformLayout();
         ResumeLayout(false);
