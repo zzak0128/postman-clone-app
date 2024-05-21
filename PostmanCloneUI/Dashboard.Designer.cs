@@ -104,7 +104,7 @@ partial class Dashboard
         httpVerbSelection.DropDownStyle = ComboBoxStyle.DropDownList;
         httpVerbSelection.FlatStyle = FlatStyle.System;
         httpVerbSelection.FormattingEnabled = true;
-        httpVerbSelection.Items.AddRange(new object[] { "GET", "POST" });
+        httpVerbSelection.Items.AddRange(new object[] { "GET", "POST", "PUT", "PATCH", "DELETE" });
         httpVerbSelection.Location = new Point(117, 147);
         httpVerbSelection.Name = "httpVerbSelection";
         httpVerbSelection.Size = new Size(107, 40);
